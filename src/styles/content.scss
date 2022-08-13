@@ -1,0 +1,18 @@
+.content__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  .content__elem {
+    display: flex;
+    flex-direction: column;
+    .elem__img {
+      border-radius: 8px;
+      max-height: 216px;
+    }
+    .elem__id {
+      font-weight: 500;
+      font-size: 14px;
+      color: #111827;
+    }
+  }
+}
