@@ -1,18 +1,37 @@
 .content__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+  width: 100%;
+  box-sizing: border-box;
   .content__elem {
     display: flex;
     flex-direction: column;
     .elem__img {
       border-radius: 8px;
       max-height: 216px;
+      width: 100%;
     }
     .elem__id {
       font-weight: 500;
       font-size: 14px;
       color: #111827;
     }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .content__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 999px) {
+  .content__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 650px) {
+  .content__wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
   }
 }

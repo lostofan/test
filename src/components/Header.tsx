@@ -5,6 +5,7 @@ export const Header = () => {
   return (
     <header>
         <div className="header_wrapper">
+            <img src={require('../img/bg.png')} alt="" className="header__bg" />
             <div className="header__content">
                 <div className="header__left">
                     <img className='header__avatar' src={require('../img/avatar.png')} alt="" />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Content } from './components/Content';
 import { Header } from './components/Header';
@@ -10,8 +10,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app_wrapper">
-        <Header />
-        <Content setCloseModal={setCloseModal}/>
+          <Header />
+          <Content setCloseModal={setCloseModal}/>
       </div>
       <Modal closeModal={closeModal} setCloseModal={setCloseModal}/>
     </BrowserRouter>
