@@ -37,7 +37,7 @@ export const Modal = ({closeModal, setCloseModal}:ModalProps) => {
             </div>
             <div className="modal__comments">
                 <div className="comments__list">
-                    {image.comments ? image.comments?.map((elem:any) => elem.text) : undefined}
+                    {image.comments ? image.comments?.map((elem) => elem.text) : undefined}
                 </div>
                 <textarea className="comments__form" name="" id="" value={comment} onChange={(e) => handleText(e)}></textarea>
                 <div className="comments__tip">

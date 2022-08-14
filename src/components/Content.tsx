@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { useParseImages } from './hooks';
 import "../styles/loader.scss";
 import "../styles/content.scss";
+import { ModalProps } from '../types/Modal.types';
 
 
-export const Content = ({setCloseModal}:any) => {
+export const Content = ({setCloseModal}:ModalProps) => {
     const navigate = useNavigate();
     const {images} = useParseImages();
 

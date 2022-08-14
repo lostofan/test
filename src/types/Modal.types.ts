@@ -1,5 +1,5 @@
 export type ModalProps = {
-    closeModal:boolean;
+    closeModal?:boolean;
     setCloseModal: (value: boolean) => void;
 }
 
